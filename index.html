@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack Experience</title>
+    <link rel="stylesheet" href="blackjack.css">
+</head>
+<body>
+    <h1>Blackjack Game</h1>
+    <div id="deckShuffler" class="hidden shuffle-deck">
+        <img src="img/loading.gif" class="img-responsive">
+        <h3>Shuffling deck...</h3>
+    </div>
+    <h2>Game Board</h2>
+    <div class='hand-ui'>
+        <h3 class="conditions">House Hand</h3>
+        <h3 class="total-text">House Total</h3>
+        <h3 id="houseCount" class="count-total"></h3>
+    </div>
+    <div id="houseHand" class="player-hands"></div>
+    <div class='hand-ui'>
+        <h3 class="conditions">Player Hand</h3>
+        <h3 class="total-text">Player Total</h3>
+        <h3 id="playerCount" class="count-total"></h3>
+    </div>
+    <div id="playerHand" class="player-hands"></div>
+    <div id="gameActions">
+        <button onclick='startNewGame()'>Start New Game</button>
+        <button id='hitBtn' onclick='drawPlayerCard()'>Hit</button>
+        <button id='standBtn' onclick='onStand()'>Stand</button>
+    </div>
+    <div class='hand-ui'>
+        <h3>Your Funds</h3>
+        <h3 id="playerBank">$100</h3>
+    </div>
+
+    <script src="blackjack.js"></script>
+</body>
+</html>

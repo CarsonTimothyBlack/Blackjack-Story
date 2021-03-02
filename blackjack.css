@@ -1,0 +1,77 @@
+.hidden {
+    display: none;
+}
+
+.shuffle-deck h3 {
+    display: inline-block;
+    position: relative;
+    bottom: 75px;
+    font-size: 45px;
+}
+
+.hand-ui h3 {
+    display: inline-block;
+    width: 10%;
+}
+.hand-ui h3.count-total {
+    width: 50%;
+}
+
+.count-total.bust {
+    color: red;
+}
+.count-total.black-jack {
+    color: green;
+}
+
+.player-hands {
+    height: 205px;
+}
+
+.game-card {
+    border: solid 1px black;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    padding: 60px 15px 15px;
+    text-align: center;
+    font-size: 35px;
+    margin: 10px;
+    position: relative;
+}
+
+.game-card.hearts .card-suit{
+    background-image: url(img/hearts.png);
+}
+.game-card.diamonds .card-suit{
+    background-image: url(img/diamonds.png);
+}
+.game-card.clubs .card-suit{
+    background-image: url(img/clubs.png);
+}
+.game-card.spades .card-suit{
+    background-image: url(img/spades.png);
+}
+
+.card-suit {
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.house-hidden {
+    background-image: url(img/cardBack.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.house-hidden .card-suit {
+    background-image: none !important;
+}
